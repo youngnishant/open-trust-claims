@@ -1,4 +1,4 @@
-type Note @model(accountRelation: LIST, description: "Claim") {
+type claim @model(accountRelation: LIST, description: "Claim") {
   issuer: DID! @documentAccount
   version: CommitID! @documentVersion
   subject: String! @length(min: 10, max: 2000)
