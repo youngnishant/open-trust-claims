@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/youngnishant/open-trust-claims#readme",
   "dependencies": {
+    "@composedb/client": "^0.1.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.9.2",
