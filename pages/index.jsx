@@ -1,4 +1,4 @@
-import { gql, useQuery } from "@apollo/client";
+// import { gql, useQuery } from "@apollo/client";
 
 const CLAIN_QUERY = gql`
   query claim {
@@ -7,7 +7,7 @@ const CLAIN_QUERY = gql`
 `;
 
 const Index = () => {
-  const { data } = useQuery(CLAIN_QUERY);
+  // const { data } = useQuery(CLAIN_QUERY);
   console.log(data);
 
   return (
