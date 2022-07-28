@@ -1,4 +1,5 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
+import { useRouter } from "next/router";
 import Cytoscape from "cytoscape";
 
 import Container from "@mui/material/Container";
@@ -12,6 +13,7 @@ import styles from "./styles";
 const Search = () => {
   const [cy, setCy] = useState(null);
   const ref = useRef(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (cy === null) {
@@ -19,6 +21,32 @@ const Search = () => {
       setCy(cyInstance);
     }
   }, [ref.current]);
+
+  useMemo(() => {
+    // event listner for when a node is clicked
+    if (cy) {
+      cy.on("tap", "node", function (e) {
+        e.preventDefault();
+        var nodeId = e.target.id();
+        router.push(`/create/${nodeId}`);
+      });
+
+      // add hover state pointer cursor on node
+      cy.on("mouseover", "node", (event) => {
+        const container = event?.cy?.container();
+        if (container) {
+          container.style.cursor = "pointer";
+        }
+      });
+
+      cy.on("mouseout", "node", (event) => {
+        const container = event?.cy?.container();
+        if (container) {
+          container.style.cursor = "default";
+        }
+      });
+    }
+  }, [cy]);
 
   return (
     <Container sx={styles.container} maxWidth={false}>

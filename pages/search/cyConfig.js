@@ -38,6 +38,11 @@ const cyConfig = (containerRef) => ({
         "line-style": "unbundled-bezier",
         "control-point-distances": " 20px 30px 40px",
         "control-point-weights": "0.5 0.2 0.8",
+        "text-rotation": "autorotate",
+        "text-margin-x": 20,
+        "text-margin-y": 40,
+        "text-background-color": "#0074d9",
+        content: "data(relation)",
       },
     },
     {

@@ -49,24 +49,28 @@ export default [
     data: {
       target: "Open Trust Claims",
       source: "Nishant",
+      relation: "works on",
     },
   },
   {
     data: {
       target: "Open Trust Claims",
       source: "Sami",
+      relation: "works on",
     },
   },
   {
     data: {
       target: "Open Trust Claims",
       source: "Thura",
+      relation: "works on",
     },
   },
   {
     data: {
       source: "Open Trust Claims",
       target: "ETHCC 2022 Devpost",
+      relation: "Participated in",
     },
   },
 ];
