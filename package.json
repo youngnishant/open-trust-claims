@@ -29,9 +29,14 @@
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.9.2",
     "cytoscape": "^3.22.1",
+    "dids": "^3.2.0",
+    "jotai": "^1.7.6",
+    "key-did-provider-ed25519": "^2.0.1",
+    "key-did-resolver": "^2.0.5",
     "moment": "^2.29.4",
     "next": "^12.2.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "uint8arrays": "^3.0.0"
   }
 }
