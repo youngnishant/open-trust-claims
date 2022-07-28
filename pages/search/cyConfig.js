@@ -24,7 +24,7 @@ const cyConfig = (containerRef) => ({
         "text-wrap": "wrap",
         "text-max-width": 100,
         "text-overflow-wrap": "break-word",
-        content: "data(label)",
+        content: "data(subject)",
       },
     },
     {
@@ -59,12 +59,9 @@ const cyConfig = (containerRef) => ({
   ],
 
   layout: {
-    // name: 'breadthfirst',
-    // directed: true,
-    // padding: 10
-    // name:"cose",
-    // name: "random",
-    name: "concentric",
+    name: "breadthfirst",
+    directed: true,
+    padding: 10,
   },
 });
 

@@ -1,4 +1,4 @@
-import allClaims from "./output.json";
+import allClaims from "./allClaims";
 
 const getNodes = () => {
   const nodes = [];
@@ -40,26 +40,7 @@ const elements = () => {
   // const nodes = getNodes();
   // const elements = [...edges, ...nodes];
   // return elements;
-  return [
-    { data: { id: "Golda", label: "Node 1" } },
-    { data: { id: "Nishant", label: "Node 2" } },
-    { data: { id: "Sami", label: "Node 3" } },
-
-    {
-      data: {
-        source: "Golda",
-        target: "Nishant",
-        label: "Edge from Node1 to Node2",
-      },
-    },
-    {
-      data: {
-        source: "Golda",
-        target: "Sami",
-        label: "Edge from Node1 to Node3",
-      },
-    },
-  ];
+  return allClaims;
 };
 
 export default elements;
